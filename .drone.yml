@@ -1,6 +1,6 @@
 image: ubuntu:git
 
 script:
-    - apt-get install nginx
+    - apt-get install -y nginx
     - cp nginx.conf /etc/nginx.conf
     - nginx
