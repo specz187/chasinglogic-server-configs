@@ -6,4 +6,4 @@ script:
     - apt-get install -y nginx docker.io
     - cp nginx/nginx.conf /etc/nginx/nginx.conf
     - nginx
-    - docker build -f docker/Dockerfile
+    - docker build docker/Dockerfile
