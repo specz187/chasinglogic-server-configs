@@ -11,7 +11,7 @@ RUN mkdir /go/pkg
 RUN mkdir /go/src
 RUN mkdir /go/bin
 
-RUN apt-get install -y curl nginx docker
+RUN apt-get install -y curl nginx docker.io
 
 RUN curl -O https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz
 RUN tar -C /usr/local -xzf go1.5.1.linux-amd64.tar.gz

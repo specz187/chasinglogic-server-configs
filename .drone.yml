@@ -2,7 +2,7 @@
 image: ubuntu:git
 
 script:
-    - apt-get install -y nginx docker
+    - apt-get install -y nginx docker.io
     - cp nginx/nginx.conf /etc/nginx/nginx.conf
     - nginx
     - docker build -f docker/Dockerfile
