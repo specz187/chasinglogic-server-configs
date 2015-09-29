@@ -1,0 +1,7 @@
+# This should be changed once this docker image is made.
+image: ubuntu:git
+
+script:
+    - cp nginx/nginx.conf /etc/nginx/nginx.conf
+    - nginx
+    - docker build -f docker/Dockerfile
