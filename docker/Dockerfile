@@ -7,7 +7,7 @@ ENV GOPATH /home/cl/go
 ENV PATH $PATH:$GOROOT/bin
 
 RUN apt-get update
-RUN apt-get upgrade
+RUN apt-get upgrade -y
 RUN apt-get install -y curl nginx git mongodb-server
 
 RUN curl -O https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz
